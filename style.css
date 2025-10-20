@@ -1,0 +1,61 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffe66d;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #000;
+}
+
+/* Section headings */
+h2 {
+    color: #ffcb77;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffcb77;
+    padding-bottom: 5px;
+}
+
+/* Each project block */
+p {
+    background: rgba(16, 143, 145, 0.1);
+    backdrop-filter: blur(6px);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(150, 44, 111, 0.3);
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+/* Hover effect for project sections */
+p:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(32, 2, 28, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Footer text style */
+footer {
+    text-align: center;
+    color: #9a0707e7;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}

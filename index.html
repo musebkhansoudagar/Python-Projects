@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pthon Projects</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+
+    <h1>Simple Calculator</h1>
+    <p>try :
+        <br>
+        a = int(input("enter the first numberr")) <br>
+        b= int(input("enter second number")) <br>
+        print("what kind of operation do you want to perform\npress + for addition\npress - for substraction\npress *
+        for multiplication\npress / for division\npress % for reminder\npress ** for square") <br>
+        o = input("enter the operation do you do perform")
+        match o : <br>
+        case "+": <br>
+        print(f"the result of addition is {a+b}") <br>
+        case "-": <br>
+        print(f"the resuly of substraction is {a-b}") <br>
+        case "*": <br>
+        print(f"the result of multiplaction is {a*b}") <br>
+        case "/": <br>
+        print(f"the result of the divission is {a/b}") <br>
+        case "%": <br>
+        print(f"the result of the rim is {a%b}") <br>
+        case "**": <br>
+        print(f"the result of the square is {a**b}") <br>
+        case default: <br>
+        print("invalid operation") <br>
+
+        except Exception as e: <br>
+        print("enter a valid value of a and b") <br>
+    </p>
+    <h1>KBC Game</h1>
+    <p>questions = <br>[["who is sharukh khan","wwe player","actor","singer","musician",2]<br>
+        ,["who is leo messi","cricketer","taxi driver","cricketer","footballer",4],<br>
+        ["who is virat kohli","business man","cricketer","actor","teacher",2]
+        ]<br>
+        for question in questions:<br>
+        print(question[0])<br>
+        print(f"a.{question[1]}")<br>
+        print(f"b.{question[2]}")<br>
+        print(f"c.{question[3]}")<br>
+        print(f"d.{question[4]}")<br>
+
+        a = int(input("enter your answer 1 is for a\n 2 is for b\n 3 is for c\n 4 id for d"))<br>
+
+        if (question[5]==a):<br>
+        print("the answer is correct")<br>
+        print("conratulations you have won 7cr")<br>
+        else:<br>
+        print("the answer is wrong,the correct answer was",question[5])<br>
+        print("better luck try next time")<br>
+        break
+    </p>
+    <h1>PDF Merger</h1>
+    <p>from PyPDF2 import PdfWriter<br>
+        merger = PdfWriter()<br>
+        pdfs = []<br>
+        n = int(input("how many pdfs do you want to merge?\n"))<br>
+        for i in range (0,n):<br>
+        name = input(f"enter the name of the pdf {i+1}:")<br>
+        pdfs.append(name)<br>
+        for pdf in pdfs :<br>
+        merger.append(pdf)<br>
+        merger.write("merged-pdf.pdf")<br>
+        merger.close<br>
+    </p>
+    <h1>Drinking Water Reminder</h1>
+    <p>import time<br>
+        from plyer import notification<br>
+
+        while True :<br>
+        print("Please Sip Some Water")<br>
+        time.sleep(60*60)<br>
+        notification.notify(title = "please drink some water",<br>
+        message = "you need to drink some water",)<br>
+    </p>
+</body>
+
+</html>
